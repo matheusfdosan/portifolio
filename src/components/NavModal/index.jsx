@@ -1,7 +1,6 @@
 import React, { useContext } from "react"
 import "./styles.css"
 import { ThemeContext } from "../../utils/ThemeContext"
-import { Link } from "react-scroll"
 
 function NavModal({ clickSomewhere }) {
   const { theme, toggleTheme } = useContext(ThemeContext)
@@ -15,64 +14,43 @@ function NavModal({ clickSomewhere }) {
       <div id="modal-container">
         <ul>
           <li>
-            <Link
-              to="about-container"
-              spy={true}
-              smooth={true}
-              offset={100}
-              duration={500}
+            <a
+              href="#about-container"
               onClick={handleCloseModal}
             >
               Sobre
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="my-projects"
-              spy={true}
-              smooth={true}
-              offset={100}
-              duration={500}
+            <a
+              href="#my-projects"
               onClick={handleCloseModal}
             >
               Meus Projetos
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={100}
-              duration={500}
+            <a
+              href="#contact"
               onClick={handleCloseModal}
             >
               Contato
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="header"
-              spy={true}
-              smooth={true}
-              offset={100}
-              duration={500}
+            <a
               onClick={toggleTheme}
             >
               Mudar tema <u>{theme.toLocaleUpperCase()}</u>
-            </Link>
+            </a>
           </li>
           <div id="mail">
-            <Link
-              to="mailto:matheusfdosan@proton.me"
-              spy={true}
-              smooth={true}
-              offset={100}
-              duration={500}
+            <a
+              href="#mailto:matheusfdosan@proton.me"
             >
               Diga olá <br />
               matheusfdosan@proton.me
-            </Link>
+            </a>
           </div>
         </ul>
       </div>

@@ -1,5 +1,4 @@
 import React, { useContext } from "react"
-import { Link } from "react-scroll"
 import "./styles.css"
 
 import topArrow from "../../assets/top-arrow.svg"
@@ -10,20 +9,15 @@ function BackToTop({ on }) {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <Link
+    <div
       id="top-arrow"
       className={on ? "animate" : ""}
-      spy={true}
-      smooth={true}
-      offset={100}
-      duration={500}
-      to="header"
-      // onClick={() => {
-      //   document.location.href = "/#top"
-      // }}
+      onClick={() => {
+        document.location.href = "/#header"
+      }}
     >
       <img src={theme === "light" ? topArrow : topArrowDark} alt="top-arrow" />
-    </Link>
+    </div>
   )
 }
 

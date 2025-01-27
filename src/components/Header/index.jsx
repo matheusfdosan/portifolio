@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
-import { Link } from "react-scroll"
-
 import "./styles.css"
+
 import ToggleTheme from "../ToggleTheme"
 import NavModal from "../NavModal"
 
@@ -29,39 +28,15 @@ function Header() {
         <nav>
           <ul>
             <li>
-              <Link
-                to="about-container"
-                spy={true}
-                smooth={true}
-                offset={100}
-                duration={500}
-              >
-                Sobre
-              </Link>
+              <a href="#about-container">Sobre</a>
             </li>
             <li>
-              <Link
-                to="my-projects"
-                Meus
-                spy={true}
-                smooth={true}
-                offset={100}
-                duration={500}
-              >
-                {" "}
+              <a href="#my-projects">
                 Projetos
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={100}
-                duration={500}
-              >
-                Contato
-              </Link>
+              <a href="#contact">Contato</a>
             </li>
             <ToggleTheme />
             <div

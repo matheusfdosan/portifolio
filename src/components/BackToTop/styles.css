@@ -15,6 +15,14 @@
   animation: disappeared 500ms forwards cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+#top-arrow > img {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+
 #top-arrow.animate {
   animation: appeared 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }

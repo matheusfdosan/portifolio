@@ -10,6 +10,9 @@
   --poppins: "Poppins", sans-serif;
   --pacifico: "Pacifico", serif;
   --tangerine: "Tangerine", serif;
+}
+
+[data-theme="light"] {
   --primary-color: #242126;
   --secondary-color: #c4c5c9;
   --secondary-color-80: #c4c5c9bd;
