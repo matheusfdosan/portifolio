@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import { Link } from "react-scroll"
 
 import "./styles.css"
 import ToggleTheme from "../ToggleTheme"
@@ -21,19 +22,46 @@ function Header() {
 
   return (
     <div id="header">
+      <div id="top"></div>
       <div className="container">
         <h1>Matheus!</h1>
 
         <nav>
           <ul>
             <li>
-              <a href="#about-container">Sobre</a>
+              <Link
+                to="about-container"
+                spy={true}
+                smooth={true}
+                offset={100}
+                duration={500}
+              >
+                Sobre
+              </Link>
             </li>
             <li>
-              <a href="#my-projects">Meus Projetos</a>
+              <Link
+                to="my-projects"
+                Meus
+                spy={true}
+                smooth={true}
+                offset={100}
+                duration={500}
+              >
+                {" "}
+                Projetos
+              </Link>
             </li>
             <li>
-              <a href="#contact">Contato</a>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={100}
+                duration={500}
+              >
+                Contato
+              </Link>
             </li>
             <ToggleTheme />
             <div

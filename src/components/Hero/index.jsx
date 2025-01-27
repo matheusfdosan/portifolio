@@ -49,7 +49,7 @@ function Hero() {
             onMouseLeave={handleMouseLeave}
             onClick={() => {
               window.open(
-                "https://github.com/matheusfdosan/MelhorCidade_FrontEnd"
+                "https://github.com/matheusfdosan/justdonotes"
               )
             }}
           ></div>
@@ -58,7 +58,7 @@ function Hero() {
             onMouseEnter={() => handleMouseEnter("Veja")}
             onMouseLeave={handleMouseLeave}
             onClick={() => {
-              window.open("https://github.com/matheusfdosan/justdonotes")
+              window.open("https://github.com/matheusfdosan/MelhorCidade_FrontEnd")
             }}
           ></div>
           <div className="email">

@@ -40,6 +40,7 @@
   text-transform: uppercase;
   opacity: .8;
   transition: opacity 200ms ease;
+  cursor: pointer;
 }
 
 #modal-container > ul > li > a:hover {

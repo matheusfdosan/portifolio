@@ -1,8 +1,9 @@
 import React, { useContext } from "react"
 import "./styles.css"
 import { ThemeContext } from "../../utils/ThemeContext"
+import { Link } from "react-scroll"
 
-function NavModal({clickSomewhere}) {
+function NavModal({ clickSomewhere }) {
   const { theme, toggleTheme } = useContext(ThemeContext)
 
   const handleCloseModal = () => {
@@ -14,30 +15,64 @@ function NavModal({clickSomewhere}) {
       <div id="modal-container">
         <ul>
           <li>
-            <a href="#about-container" onClick={handleCloseModal}>
+            <Link
+              to="about-container"
+              spy={true}
+              smooth={true}
+              offset={100}
+              duration={500}
+              onClick={handleCloseModal}
+            >
               Sobre
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#my-projects" onClick={handleCloseModal}>
+            <Link
+              to="my-projects"
+              spy={true}
+              smooth={true}
+              offset={100}
+              duration={500}
+              onClick={handleCloseModal}
+            >
               Meus Projetos
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contact" onClick={handleCloseModal}>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={100}
+              duration={500}
+              onClick={handleCloseModal}
+            >
               Contato
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#header" onClick={toggleTheme}>
+            <Link
+              to="header"
+              spy={true}
+              smooth={true}
+              offset={100}
+              duration={500}
+              onClick={toggleTheme}
+            >
               Mudar tema <u>{theme.toLocaleUpperCase()}</u>
-            </a>
+            </Link>
           </li>
           <div id="mail">
-            <a href="mailto:matheusfdosan@proton.me">
+            <Link
+              to="mailto:matheusfdosan@proton.me"
+              spy={true}
+              smooth={true}
+              offset={100}
+              duration={500}
+            >
               Diga olá <br />
               matheusfdosan@proton.me
-            </a>
+            </Link>
           </div>
         </ul>
       </div>
