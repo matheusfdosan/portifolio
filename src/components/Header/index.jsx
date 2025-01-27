@@ -47,7 +47,7 @@ function Header() {
             </div>
           </ul>
         </nav>
-        {modal && <NavModal />}
+        {modal && <NavModal clickSomewhere={handleClickBurguer} />}
       </div>
     </div>
   )

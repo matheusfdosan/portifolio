@@ -2,16 +2,15 @@ import React, { useContext } from "react"
 import "./styles.css"
 import { ThemeContext } from "../../utils/ThemeContext"
 
-function NavModal() {
+function NavModal({clickSomewhere}) {
   const { theme, toggleTheme } = useContext(ThemeContext)
 
   const handleCloseModal = () => {
-    console.log("oi")
+    clickSomewhere()
   }
 
   return (
     <div id="modal-overlay">
-      <div id="close-modal"></div>
       <div id="modal-container">
         <ul>
           <li>
