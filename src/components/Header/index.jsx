@@ -4,6 +4,11 @@ import "./styles.css"
 import ToggleTheme from "../ToggleTheme"
 import NavModal from "../NavModal"
 
+import gsap from "gsap"
+import { ScrollToPlugin } from "gsap/ScrollToPlugin"
+
+gsap.registerPlugin(ScrollToPlugin)
+
 function Header() {
   const [modal, setModal] = useState(false)
 
@@ -19,6 +24,16 @@ function Header() {
     }
   }, [modal])
 
+  const handleClickLink = (e) => {
+    const hash = e.target.name
+
+    if (window.innerWidth >= 780) {
+      gsap.to(window, { duration: 1, scrollTo: hash })
+    } else {
+      document.location.href = `/${hash}`
+    }
+  }
+
   return (
     <div id="header">
       <div id="top"></div>
@@ -28,15 +43,19 @@ function Header() {
         <nav>
           <ul>
             <li>
-              <a href="#about-container">Sobre</a>
+              <a onClick={handleClickLink} name="#about-container">
+                Sobre
+              </a>
             </li>
             <li>
-              <a href="#my-projects">
+              <a onClick={handleClickLink} name="#my-projects">
                 Projetos
               </a>
             </li>
             <li>
-              <a href="#contact">Contato</a>
+              <a onClick={handleClickLink} name="#contact">
+                Contato
+              </a>
             </li>
             <ToggleTheme />
             <div

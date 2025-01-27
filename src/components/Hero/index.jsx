@@ -9,6 +9,7 @@ function Hero() {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 780)
 
   useEffect(() => {
+
     const handleResize = () => {
       setIsDesktop(window.innerWidth >= 780)
     }
@@ -48,9 +49,7 @@ function Hero() {
             onMouseEnter={() => handleMouseEnter("Veja")}
             onMouseLeave={handleMouseLeave}
             onClick={() => {
-              window.open(
-                "https://github.com/matheusfdosan/justdonotes"
-              )
+              window.open("https://github.com/matheusfdosan/justdonotes")
             }}
           ></div>
           <div
@@ -58,7 +57,9 @@ function Hero() {
             onMouseEnter={() => handleMouseEnter("Veja")}
             onMouseLeave={handleMouseLeave}
             onClick={() => {
-              window.open("https://github.com/matheusfdosan/MelhorCidade_FrontEnd")
+              window.open(
+                "https://github.com/matheusfdosan/MelhorCidade_FrontEnd"
+              )
             }}
           ></div>
           <div className="email">
