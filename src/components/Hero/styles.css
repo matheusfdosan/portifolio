@@ -43,16 +43,6 @@
   position: relative;
 }
 
-.card:nth-child(1) {
-  grid-area: one;
-  height: 45rem;
-  background-image: url("../../assets/card-one-illustration.svg"),
-    linear-gradient(45deg, #7196fb, #435995);
-  background-position: center;
-  background-size: 18rem, cover;
-  background-repeat: no-repeat;
-}
-
 .card:nth-child(2) {
   grid-area: two;
   height: 30rem;
@@ -60,6 +50,17 @@
     linear-gradient(45deg, #d0d0d0, #fff, #d0d0d0);
   background-position: center;
   background-size: 55rem, cover;
+  background-repeat: no-repeat;
+}
+
+#cards-container > div:nth-child(3) {
+  width: 100%;
+  grid-area: one;
+  height: 45rem;
+  background-image: url("../../assets/card-one-illustration.svg"),
+    linear-gradient(45deg, #7196fb, #435995);
+  background-position: center;
+  background-size: 18rem, cover;
   background-repeat: no-repeat;
 }
 
@@ -107,7 +108,7 @@
 
   #hero {
     height: 90vh;
-    margin-bottom: 2rem;
+    padding-bottom: 6rem;
   }
 
   #cards-container {

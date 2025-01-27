@@ -40,9 +40,16 @@
 
 @media (max-width: 500px) {
   #five-years-text {
-    font-size: 3rem;
+    font-size: 4rem;
   }
+
   #five-years {
     height: 80vh;
+  }
 }
+
+@media (max-width: 390px) {
+  #five-years-text {
+    font-size: 3rem;
+  }
 }
