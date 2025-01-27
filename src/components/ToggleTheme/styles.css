@@ -1,0 +1,6 @@
+#theme-switcher > button {
+  background-color: transparent;
+  border: none;
+  padding: .5rem;
+  cursor: pointer;
+}

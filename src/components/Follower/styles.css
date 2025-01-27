@@ -1,0 +1,31 @@
+#follower {
+  position: fixed;
+  width: 9rem;
+  height: 9rem;
+  background-color: var(--secondary-color-30);
+  backdrop-filter: blur(0.7rem);
+  border-radius: 50%;
+  pointer-events: none;
+  font-family: var(--palanquin);
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#follower.animate {
+  animation: mouseFollower 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes mouseFollower {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+:root {
+  --palanquin: "Palanquin Dark", serif;
+  --poppins: "Poppins", sans-serif;
+  --pacifico: "Pacifico", serif;
+  --tangerine: "Tangerine", serif;
+  --primary-color: #242126;
+  --secondary-color: #c4c5c9;
+  --secondary-color-80: #c4c5c9bd;
+  --secondary-color-50: #c4c5c97e;
+  --secondary-color-30: #c4c5c94f;
+}
+
+[data-theme="dark"] {
+  --primary-color: #fbfbfb;
+  --secondary-color: #242126;
+  --secondary-color-80: #242126bd;
+  --secondary-color-50: #2421267e;
+  --secondary-color-30: #2421264f;
+}
+
+a {
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: var(--poppins);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color-30);
+  border-radius: 2rem;
+  border: 3px solid var(--primary-color);
+}

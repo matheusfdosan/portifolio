@@ -1,0 +1,140 @@
+#projects-container {
+  padding-bottom: 5rem;
+}
+
+#projects-container h2 {
+  margin-top: 10rem;
+  font-size: 6.2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: var(--palanquin);
+  color: var(--secondary-color);
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: space-around;
+  color: var(--secondary-color);
+  margin-bottom: 10rem;
+}
+
+.project h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
+.project span {
+  font-size: 1.8rem;
+}
+
+.project p {
+  padding: 2rem 0;
+  width: 90%;
+  opacity: 0.8;
+  font-size: 1.6rem;
+}
+
+.project a {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 0.2rem dashed;
+  border-color: var(--secondary-color-50);
+  text-decoration: none;
+  color: var(--secondary-color-80);
+  opacity: 0.8;
+  transition: opacity 200ms ease;
+}
+
+.project a:hover {
+  opacity: 1;
+  color: var(--secondary-color);
+}
+
+.right-side {
+  width: 50%;
+}
+
+.left-side {
+  width: 50%;
+}
+
+#project-1 > .right-side {
+  height: 40rem;
+  width: 60%;
+  background-image: url("../../assets/melhorcidade-illustration.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+#project-2 > .left-side {
+  height: 40rem;
+  width: 60%;
+  background-image: url("../../assets/coffee-teeth-illustration.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+#project-3 > .right-side {
+  height: 40rem;
+  width: 60%;
+  background-image: url("../../assets/urbanvault-illustration.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+  .project {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .left-side {
+    width: 100%;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+
+  #project-2 {
+    flex-direction: column;
+  }
+
+  #project-1 > .right-side {
+    width: 100%;
+  }
+  #project-2 > .left-side {
+    width: 100%;
+  }
+  #project-3 > .right-side {
+    width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  #projects-container h2 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #projects-container h2 {
+    font-size: 3rem;
+  }
+}

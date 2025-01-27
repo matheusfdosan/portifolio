@@ -1,0 +1,48 @@
+#five-years {
+  height: 100vh;
+}
+
+.marquee {
+  color: var(--secondary-color-80);
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 1.8rem;
+}
+
+#five-years-text {
+  font-size: 10rem;
+  font-family: var(--palanquin);
+  font-weight: bolder;
+  text-align: center;
+  padding: 15rem 0;
+  text-transform: uppercase;
+  line-height: 10rem;
+  color: var(--secondary-color);
+  opacity: 0;
+  transform: translateY(10rem);
+}
+
+@media (max-width: 1000px) {
+  #five-years-text {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 780px) {
+  #five-years-text {
+    font-size: 5rem;
+    line-height: 4rem;
+    opacity: 1;
+    transform: translateY(0);
+    line-height: 6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #five-years-text {
+    font-size: 3rem;
+  }
+  #five-years {
+    height: 80vh;
+}
+}

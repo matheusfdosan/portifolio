@@ -1,0 +1,145 @@
+#hero {
+  margin-top: 3rem;
+  margin-bottom: 9rem;
+}
+
+#hero > .container > p {
+  color: var(--secondary-color);
+  filter: opacity(0.7);
+  font-size: 1.8rem;
+  font-family: var(--poppins);
+  margin-left: 0.5rem;
+}
+
+#hero > .container > p > span {
+  font-family: var(--pacifico);
+  opacity: 1;
+}
+
+#hero > .container > h2 {
+  color: var(--secondary-color);
+  font-family: var(--palanquin);
+  font-weight: 200;
+  font-size: 6rem;
+  text-transform: uppercase;
+  line-height: 8rem;
+}
+
+#cards-container {
+  display: grid;
+  grid-template-areas:
+    "one one two two"
+    "one one three ."
+    "one one . .";
+  grid-gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  width: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.card:nth-child(1) {
+  grid-area: one;
+  height: 45rem;
+  background-image: url("../../assets/card-one-illustration.svg"),
+    linear-gradient(45deg, #7196fb, #435995);
+  background-position: center;
+  background-size: 18rem, cover;
+  background-repeat: no-repeat;
+}
+
+.card:nth-child(2) {
+  grid-area: two;
+  height: 30rem;
+  background-image: url("../../assets/card-two-illustration.png"),
+    linear-gradient(45deg, #d0d0d0, #fff, #d0d0d0);
+  background-position: center;
+  background-size: 55rem, cover;
+  background-repeat: no-repeat;
+}
+
+.email {
+  grid-area: three;
+  color: var(--secondary-color);
+}
+
+.email > a {
+  position: relative;
+  color: var(--secondary-color);
+  opacity: 0.7;
+  text-decoration: underline 0.1rem dashed;
+  text-decoration-color: #c4c5c981;
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.5rem;
+  transition: opacity 200ms ease;
+}
+
+.email > a:hover {
+  opacity: 1;
+}
+
+#inspirational {
+  display: none;
+}
+
+@media (max-width: 1040px) {
+  #cards-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 740px) {
+  #hero > .container > h2 {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .card {
+    display: none;
+  }
+
+  #hero {
+    height: 90vh;
+    margin-bottom: 2rem;
+  }
+
+  #cards-container {
+    flex-direction: column;
+  }
+
+  #inspirational {
+    display: block;
+    position: relative;
+  }
+
+  #inspirational > h3 {
+    position: absolute;
+    width: 70%;
+    top: 3rem;
+    left: 3rem;
+    font-family: var(--poppins);
+    font-weight: normal;
+    color: #c4c5c9;
+  }
+
+  #inspirational > span {
+    position: absolute;
+    left: 3rem;
+    bottom: 3rem;
+    color: #c4c5c9b7;
+  }
+
+  #inspirational > img {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+}
