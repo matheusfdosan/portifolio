@@ -38,13 +38,11 @@
   text-decoration: none;
   font-family: var(--palanquin);
   text-transform: uppercase;
-  opacity: .8;
+  opacity: 0.8;
   transition: opacity 200ms ease;
   cursor: pointer;
 }
 
 #modal-container > ul > li > a:hover {
   opacity: 1;
-
 }
-

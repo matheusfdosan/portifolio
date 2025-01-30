@@ -20,11 +20,11 @@
 }
 
 .skill-item:hover {
-  border-color: .1rem solid var(--secondary-color-50);
+  border-color: 0.1rem solid var(--secondary-color-50);
 }
 
 @media (max-width: 560px) {
-  .skill-item  {
+  .skill-item {
     justify-content: center;
   }
 

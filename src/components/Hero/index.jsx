@@ -1,30 +1,41 @@
 import React, { useEffect, useState } from "react"
-import "./styles.css"
-import Follower from "../Follower"
 import notebook from "../../assets/notebook.jpg"
+import Follower from "../Follower"
+import "./styles.css"
 
 function Hero() {
   const [viewMouseEffect, setViewMouseEffect] = useState(false)
   const [mouseEffectMsg, setMouseEffectMsg] = useState("")
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 780)
+  const [mouseScroll, setMouseScroll] = useState(false)
 
   useEffect(() => {
-
     const handleResize = () => {
       setIsDesktop(window.innerWidth >= 780)
     }
 
+    const handleScroll = () => {
+      setMouseScroll(true)
+      setViewMouseEffect(false)
+    }
+
     window.addEventListener("resize", handleResize)
+    window.addEventListener("scroll", handleScroll)
 
     return () => {
+      setMouseScroll(false)
+      window.removeEventListener("scroll", handleScroll)
       window.removeEventListener("resize", handleResize)
     }
   }, [])
 
   const handleMouseEnter = (msg) => {
-    setViewMouseEffect(true)
-    setMouseEffectMsg(msg)
+    if (!mouseEffectMsg) {
+      setViewMouseEffect(true)
+      setMouseEffectMsg(msg)
+    }
   }
+
   const handleMouseLeave = () => {
     setViewMouseEffect(false)
     setMouseEffectMsg("")

@@ -1,4 +1,4 @@
-<h1 align="center"> Portifolio Online </h1>
+<h1 align="center"> Portfólio • Desenvolvedor Web </h1>
 
 <p align="center">
 
@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Bem-vindo ao meu portfólio! Aqui você encontrará uma coleção dos meus projetos, habilidades e experiências como desenvolvedor. Sou um entusiasta da tecnologia com mais de **5 anos de experiência** em desenvolvimento web, focado em criar soluções inovadoras e eficientes.
+Bem-vindo ao meu portfólio! Aqui você encontrará uma coleção dos meus projetos, habilidades e experiências como desenvolvedor. Sou apaixonado pela tecnologia com mais de **5 anos de experiência** em desenvolvimento web, focado em criar soluções inovadoras e eficientes.
 
 De uma olhada no [portifólio](https://matheusdev.is-a.dev/)
 

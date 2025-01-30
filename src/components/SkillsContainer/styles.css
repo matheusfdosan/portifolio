@@ -1,6 +1,5 @@
 #skills-container {
   margin-bottom: 20rem;
-
 }
 
 #skills-container h2 {
@@ -18,9 +17,9 @@
 }
 
 @media (max-width: 560px) {
-#skills-set {
-  grid-template-columns: repeat(auto-fit, minmax(9rem, auto));
-}
+  #skills-set {
+    grid-template-columns: repeat(auto-fit, minmax(9rem, auto));
+  }
 }
 
 @media (max-width: 670px) {
