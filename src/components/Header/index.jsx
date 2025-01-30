@@ -48,6 +48,11 @@ function Header() {
               </a>
             </li>
             <li>
+              <a onClick={handleClickLink} name="#skills-container">
+                Habilidades
+              </a>
+            </li>
+            <li>
               <a onClick={handleClickLink} name="#my-projects">
                 Projetos
               </a>

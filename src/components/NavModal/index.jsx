@@ -23,6 +23,14 @@ function NavModal({ clickSomewhere }) {
           </li>
           <li>
             <a
+              href="#skills-container"
+              onClick={handleCloseModal}
+            >
+              Habilidades
+            </a>
+          </li>
+          <li>
+            <a
               href="#my-projects"
               onClick={handleCloseModal}
             >

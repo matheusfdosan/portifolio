@@ -1,0 +1,30 @@
+#skills-container {
+  margin-bottom: 20rem;
+
+}
+
+#skills-container h2 {
+  font-size: 6.2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: var(--palanquin);
+  color: var(--secondary-color-80);
+}
+
+#skills-set {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, auto));
+  grid-gap: 1rem;
+}
+
+@media (max-width: 560px) {
+#skills-set {
+  grid-template-columns: repeat(auto-fit, minmax(9rem, auto));
+}
+}
+
+@media (max-width: 670px) {
+  #skills-container h2 {
+    font-size: 4rem;
+  }
+}

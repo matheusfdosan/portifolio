@@ -6,7 +6,6 @@ import sunIconDark from "../../assets/sun-icon-dark.svg"
 import { ThemeContext } from "../../utils/ThemeContext"
 
 function ToggleTheme() {
-  
   const { theme, toggleTheme } = useContext(ThemeContext)
 
   return (
