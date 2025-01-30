@@ -10,7 +10,6 @@
   --poppins: "Poppins", sans-serif;
   --pacifico: "Pacifico", serif;
   --tangerine: "Tangerine", serif;
-  scroll-behavior: smooth;
 }
 
 [data-theme="light"] {
@@ -31,7 +30,6 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -46,7 +44,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   transition: background-color 0.5s ease, color 0.5s ease;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -65,5 +62,5 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: var(--secondary-color-30);
   border-radius: 2rem;
-  border: 3px solid var(--primary-color);
+  border: .3rem solid var(--primary-color);
 }
