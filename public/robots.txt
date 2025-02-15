@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://matheusdev.is-a.dev/sitemap.xml
