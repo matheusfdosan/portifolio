@@ -12,6 +12,8 @@ import mongodb from "../assets/techs-icon/icon-mongodb.svg"
 import postgresql from "../assets/techs-icon/icon-postgresql.svg"
 import java from "../assets/techs-icon/icon-java.svg"
 import python from "../assets/techs-icon/icon-python.svg"
+import typescript from "../assets/techs-icon/icon-typescript.png"
+import bun from "../assets/techs-icon/icon-bun.svg"
 
 const skills = [
   {
@@ -31,6 +33,14 @@ const skills = [
     icon: react,
   },
   {
+    skill: "React Native",
+    icon: react,
+  },
+  {
+    skill: "Typescript",
+    icon: typescript,
+  },
+  {
     skill: "SASS",
     icon: sass,
   },
@@ -41,6 +51,10 @@ const skills = [
   {
     skill: "Node.js",
     icon: node,
+  },
+  {
+    skill: "Bun",
+    icon: bun,
   },
   {
     skill: "Express.js",
@@ -70,6 +84,7 @@ const skills = [
     skill: "Python",
     icon: python,
   },
+
 ]
 
 export default skills

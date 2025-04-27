@@ -82,36 +82,37 @@ function ProjectsContainer() {
                 onMouseEnter={() => handleMouseEnter("Veja")}
                 onMouseLeave={handleMouseLeave}
                 onClick={() =>
-                  window.open("https://github.com/matheusfdosan/coffee-teeth")
+                  window.open(
+                    "https://github.com/matheusfdosan/super-smash-pizza-totem"
+                  )
                 }
               ></div>
               <div className="right-side">
-                <h3>Coffe Teeth</h3>
-                <span>Fevereiro de 2023</span>
+                <h3>Super Smash Pizza</h3>
+                <span>Março de 2025</span>
                 <p>
-                  O Coffee Teeth é um blog de uma cafeteria fictícia criado por
-                  mim, que apresenta produtos e receitas inspirados nos melhores
-                  cafés gourmet do mundo. Desenvolvido com HTML, CSS e
-                  JavaScript, o site oferece uma experiência de usuário
-                  intuitiva e responsiva, com design clean e minimalista. O
-                  projeto inclui páginas dedicadas a produtos como cafés
-                  especiais e sobremesas, além de uma seção de receitas
-                  exclusivas.
-                  <br /> <br />
-                  No repositório, é possível encontrar uma estrutura organizada
-                  e bem documentada, com funcionalidades como um formulário de
-                  contato e integração com redes sociais. O Coffee Teeth reflete
-                  minha paixão por desenvolvimento web e design criativo,
-                  demonstrando como a tecnologia pode criar experiências
-                  digitais envolventes, mesmo em um contexto fictício.
+                  O Sistema de Compra de Lanches para Totens de Fast Food é uma
+                  solução tecnológica voltada para otimizar e modernizar o
+                  processo de pedidos em lanchonetes e restaurantes. Com um
+                  design intuitivo e acessível, o sistema permite que os
+                  clientes escolham os produtos, definam quantidades, visualizem
+                  detalhes e finalizem o pagamento diretamente pelo totem ou
+                  tablet.
+                  <br />
+                  <br />
+                  Entre os diferenciais do projeto, destacam-se a realização de
+                  pedidos por comando de voz e a audiodescrição dos produtos,
+                  tornando a experiência mais inclusiva. A interface foi
+                  projetada especialmente para dispositivos de autoatendimento,
+                  garantindo uma experiência fluida e eficiente.
                 </p>
                 <a
                   target="_blank"
-                  href="https://matheusfdosan.github.io/coffee-teeth/"
+                  href="https://super-smash-pizza-totem.vercel.app/"
                   onMouseEnter={() => handleMouseEnter("Acesse")}
                   onMouseLeave={handleMouseLeave}
                 >
-                  Coffee Teeth
+                  Super Smash Pizzas
                   <img src={anchorArrow} alt="arrow" />
                 </a>
               </div>
@@ -119,35 +120,32 @@ function ProjectsContainer() {
 
             <div id="project-3" className="project">
               <div className="left-side">
-                <h3>UrbanVault</h3>
-                <span>Janeiro de 2025</span>
+                <h3>VM Softwares - POS</h3>
+                <span></span>
                 <p>
-                  O UrbanVault é um projeto que vai além de uma simples aula de
-                  Jest, integrando testes com Jest e React Testing Library para
-                  garantir a qualidade do código, enquanto utiliza Axios para
-                  fazer requisições de dados a uma API. O foco principal é
-                  demonstrar boas práticas de desenvolvimento, como a
-                  implementação de testes unitários e de integração, aliados à
-                  criação de uma interface dinâmica e responsiva com React. O
-                  projeto é um exemplo prático de como combinar ferramentas
-                  modernas para construir aplicações robustas e testáveis.{" "}
+                  O VM Softwares - POS é um sistema de ponto de venda moderno,
+                  composto por um frontend em React.js com Vite, oferecendo uma
+                  interface fácil de usar para gerenciar produtos, clientes e
+                  vendas. O frontend consome uma API RESTful, permite
+                  adicionar/remover produtos, controlar estados com useState,
+                  gerar PDFs de notas fiscais usando jsPDF e configurar a
+                  conexão com o backend por variáveis .env.
                   <br />
-                  <br />
-                  No repositório, você encontrará uma estrutura organizada, com
-                  componentes React bem definidos e testes que cobrem
-                  funcionalidades essenciais, como a busca e exibição de dados
-                  da API. O UrbanVault é uma demonstração do meu comprometimento
-                  com a qualidade do código e a entrega de soluções que unem
-                  funcionalidade, usabilidade e boas práticas de
-                  desenvolvimento.
+                  <br />O backend é desenvolvido com Node.js e Fastify, usando
+                  PostgreSQL como banco de dados para uma gestão eficiente de
+                  informações. Ele possibilita o cadastro, edição e exclusão de
+                  produtos, controle automático de estoque, registro de pedidos
+                  e pagamentos, além da geração de relatórios financeiros.
+                  Juntos, frontend e backend oferecem uma solução robusta para
+                  administrar negócios de forma prática e integrada.
                 </p>
                 <a
                   target="_blank"
-                  href="https://urbanvault.netlify.app/"
+                  href="https://vms-pos.onrender.com/"
                   onMouseEnter={() => handleMouseEnter("Acesse")}
                   onMouseLeave={handleMouseLeave}
                 >
-                  UrbanVault
+                  VMS - POS
                   <img src={anchorArrow} alt="arrow" />
                 </a>
               </div>
@@ -156,9 +154,7 @@ function ProjectsContainer() {
                 onMouseEnter={() => handleMouseEnter("Veja")}
                 onMouseLeave={handleMouseLeave}
                 onClick={() =>
-                  window.open(
-                    "https://github.com/matheusfdosan/project-with-react-and-jest"
-                  )
+                  window.open("https://github.com/matheusfdosan/vms_pos")
                 }
               ></div>
             </div>

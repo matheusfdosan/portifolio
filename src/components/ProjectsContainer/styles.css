@@ -78,7 +78,7 @@
 #project-2 > .left-side {
   height: 40rem;
   width: 60%;
-  background-image: url("../../assets/coffee-teeth-illustration.png");
+  background-image: url("../../assets/super-smash-pizzas-illustration.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -89,8 +89,9 @@
 #project-3 > .right-side {
   height: 40rem;
   width: 60%;
-  background-image: url("../../assets/urbanvault-illustration.png");
+  background-image: url("../../assets/vms-pos-illustration.png");
   background-size: contain;
+  border-radius: 1rem;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
