@@ -54,8 +54,8 @@ function FiveYears() {
     <div id="five-years">
       <Marquee className="marquee" speed={100} gradient={false}>
         Websites • Front-end • Resposividade • react.js • node.js • gsap •
-        Postgresql • mySQL• mongodb • java development • javascript • hTML • cSS
-        • SCSS • POO • Autenticação • Back-end For front-end
+        PostgreSQL • MySQL• mongodb • java development • javascript • hTML • cSS
+        • SCSS • POO • Autenticação • Back-end For front-end •
       </Marquee>
 
       <div id="five-years-text">Mais de 5 anos de experiência</div>
@@ -67,8 +67,8 @@ function FiveYears() {
         direction="right"
       >
         Websites • Front-end • Resposividade • react.js • node.js • gsap •
-        Postgresql • mySQL• mongodb • java development • javascript • hTML • cSS
-        • SCSS • POO • Autenticação • Back-end For front-end
+        PostgreSQL • mySQL• mongodb • java development • javascript • hTML • cSS
+        • SCSS • POO • Autenticação • Back-end For front-end •
       </Marquee>
     </div>
   )
