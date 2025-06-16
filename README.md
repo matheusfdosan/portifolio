@@ -39,5 +39,3 @@ De uma olhada no [portifólio](https://matheusdev.is-a.dev/)
 - Também me siga no [Instagram](https://instagram.com/matheusfdosan).
 
 - Conecte-se comingo no [Linkedin](https://www.linkedin.com/in/matheusfaus/)
-
-- Contrate-me para o desenvolvimento de sistemas e soluções personalizadas no [99freelas](https://www.99freelas.com.br/user/matheusfdosan)
